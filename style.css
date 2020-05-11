@@ -1,0 +1,132 @@
+/* NAVBAR */
+  .navbar-custom {
+      background-color: #99CC66;
+      color:#ffffff;
+      border-radius:0;
+  }
+  
+  .navbar-custom .navbar-nav > li > a {
+      color:#fff;
+  }
+  .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+      color: #ffffff;
+      background-color:#66FFFF;
+  }
+  .navbar-custom .navbar-brand {
+      color:#eeeeee;
+  }
+  
+
+
+  /* GLOBAL */
+  .text-blue {
+    color: black;
+  }
+  
+  h1 {
+    font-family: Lobster, Monospace;
+  }
+  
+  .paragraphFontStyle {
+    font-size: 25px;
+    font-family: Lobster;
+  }
+  .center {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* SECTION1 */
+  
+  #section1 { 
+    margin: 0 10rem;
+    background: none;
+    background-size: 100% auto;
+  }
+
+
+  /* SECTION2 */
+
+  #section2 {
+    margin: 0 10rem;
+    background:none;
+    background-size: 100% auto;
+  }
+  
+  #section2 .row{ 
+    display: flex;
+  }
+
+  #section2 .panel-intro-container {
+      display: flex;
+      align-items: center;
+  }
+
+/* SECTION3 */
+  #section3 {
+    margin: 0 10rem;
+    background: none;
+    background-size: 100% auto;
+    padding-bottom: 5%;
+  }
+    
+  #section3 .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    
+  #section3 .fab{
+    padding: 3rem;
+  }
+
+  /* SECTION4 */
+  #section4 {
+    margin: 0 10rem;
+    background:none;
+    background-size: 100% auto;
+    padding-top: 5%;
+  }
+
+
+  #section4 .project_img_container {
+    height: 50%;
+    overflow: hidden;
+  }
+  #section5 {
+    background:none;
+    background-size: 100% auto;
+    padding-top: 5%;
+  }
+  
+  #mainPage {
+    /* background: url('http://wallpoper.com/images/00/42/81/18/landscapes-minimalistic_00428118.jpg') repeat center fixed; */
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .panel-transparent {
+          background: none;
+      }
+  
+      .panel-transparent .panel-heading{
+          background: rgba(122, 130, 136, 0.2)!important;
+      }
+  
+      .panel-transparent .panel-body{
+          background: rgba(46, 51, 56, 0.2)!important;
+      }
+  
+  .thumbnail {
+     background: rgba(46, 51, 56, 0.2)!important;
+     height: 400px;
+  }
+  
+  .thumbnail a :hover {
+    opacity: 0.3;
+  }
