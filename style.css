@@ -15,6 +15,13 @@
   .navbar-custom .navbar-brand {
       color:#eeeeee;
   }
+
+  .navbar {
+    opacity: 0;
+    visibility:"hidden";
+    position: fixed !important;
+    width: 100% !important;
+  }
   
 
 
