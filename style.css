@@ -48,11 +48,17 @@
 
   /* SECTION1 */
   
-  #section1 { 
-    margin: 0 10rem;
-    background: none;
-    background-size: 100% auto;
-  }
+#section1 .bcg {
+  height: 100%;
+    width: 100%;
+}
+
+#section1 .bcg img{
+  height: 100%;
+    width: 100%;
+}
+
+
 
 
   /* SECTION2 */
