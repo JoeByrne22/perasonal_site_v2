@@ -68,16 +68,28 @@
     top: 20%;
     left: 45%;
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .name_container .first_name, .name_container .profession{
   position: relative;
   left: 300px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .name_container .last_name{
   position: relative;
   right: 300px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  opacity: 0;
+  visibility: hidden;
+}
 }
 
 
