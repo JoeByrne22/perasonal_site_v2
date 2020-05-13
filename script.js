@@ -39,32 +39,8 @@ $("#myNavbar a").on('click', function(event){
           duration:'50%'
         })
 
-        .setPin(".section1")
+        .setPin(".bcg")
         .setTween(tween) 
         .addIndicators() 
         .addTo(controller);
 
-
-
-
-        // var scrollMagicController = new ScrollMagic();
-
-        // // Create Animation for 0.5s
-        // var tween = TweenMax.to('.navbar', 0.5, {
-        //     backgroundColor: 'rgb(255, 39, 46)',
-        //     scale: 7,
-        //     rotation: 360
-        // });
-    
-        // // Create the Scene and trigger when visible with ScrollMagic
-        // var scene1 = new ScrollMagic.Scene({
-        //     triggerElement: '#section1',
-        //     offset: 150 /* offset the trigger 150px below #scene's top */
-        // })
-        // .setTween(tween)
-        // .addTo(scrollMagicController);
-    
-        // // Add debug indicators fixed on right side
-        // scene1.addIndicators();
-
-        
