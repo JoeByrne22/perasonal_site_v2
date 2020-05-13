@@ -21,13 +21,25 @@ $("#myNavbar a").on('click', function(event){
   });
 });
 
-var controller = new ScrollMagic.Controller();
 
-				// build scene
-				var scene = new ScrollMagic.Scene({
-          offset: 2,
-          triggerHook: 0.5
-        })
-        .setTween(".navbar", {opacity: 1, visibility:"visible"}) // trigger a TweenMax.to tween
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
+// $(window).scroll(function() {
+
+//   if ($(window).scrollTop() > 100) {
+//       $('.main_h').addClass('sticky');
+//   } else {
+//       $('.main_h').removeClass('sticky');
+//   }
+// });
+
+
+
+// var controller = new ScrollMagic.Controller();
+
+// 				// build scene
+// 				var scene = new ScrollMagic.Scene({
+//           offset: 2,
+//           triggerHook: 0.5
+//         })
+//         .setTween(".navbar", {opacity: 1, visibility:"visible"}) 
+//         .addIndicators() 
+//         .addTo(controller);
