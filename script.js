@@ -21,13 +21,49 @@ $("#myNavbar a").on('click', function(event){
   });
 });
 
-var controller = new ScrollMagic.Controller();
 
-				// build scene
+
+        var tween = new TimelineMax()
+        .to(".first_name", 1, {left: "-=200"})
+        .to(".last_name", 1, {right: "-=200"})
+        .to(".profession", 1, {left: "-=200"});
+
+
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        
 				var scene = new ScrollMagic.Scene({
           offset: 2,
           triggerHook: 0.5
         })
-        .setTween(".navbar", {opacity: 1, visibility:"visible"}) 
+
+        .setPin("#section1")
+        .setTween(tween) 
         .addIndicators() 
         .addTo(controller);
+
+
+
+
+        // var scrollMagicController = new ScrollMagic();
+
+        // // Create Animation for 0.5s
+        // var tween = TweenMax.to('.navbar', 0.5, {
+        //     backgroundColor: 'rgb(255, 39, 46)',
+        //     scale: 7,
+        //     rotation: 360
+        // });
+    
+        // // Create the Scene and trigger when visible with ScrollMagic
+        // var scene1 = new ScrollMagic.Scene({
+        //     triggerElement: '#section1',
+        //     offset: 150 /* offset the trigger 150px below #scene's top */
+        // })
+        // .setTween(tween)
+        // .addTo(scrollMagicController);
+    
+        // // Add debug indicators fixed on right side
+        // scene1.addIndicators();
+
+        

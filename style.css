@@ -1,4 +1,28 @@
-/* NAVBAR */
+
+  /* GLOBAL */
+
+  @font-face {
+    font-family: regular;
+    src: url(./fonts/Lalezar/Lalezar-Regular.ttf);
+  }
+  
+  body {
+    font-family: regular;
+  }
+ 
+  .paragraphFontStyle {
+    font-size: 25px;
+  }
+
+  .center {
+    text-align: center;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+ /* NAVBAR  */
   .navbar-custom {
       background-color: #99CC66;
       color:#ffffff;
@@ -25,26 +49,6 @@
   
 
 
-  /* GLOBAL */
-  .text-blue {
-    color: black;
-  }
-  
-  h1 {
-    font-family: Lobster, Monospace;
-  }
-  
-  .paragraphFontStyle {
-    font-size: 25px;
-    font-family: Lobster;
-  }
-  .center {
-    text-align: center;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 
   /* SECTION1 */
   
@@ -57,6 +61,24 @@
   height: 100%;
     width: 100%;
 }
+
+.name_container {
+  position: absolute;
+    top: 20%;
+    left: 45%;
+    width: 10%;
+}
+
+.name_container .first_name, .name_container .profession{
+  position: relative;
+  left: 300px;
+}
+
+.name_container .last_name{
+  position: relative;
+  right: 300px;
+}
+
 
 
 .mouse {
