@@ -34,11 +34,12 @@ $("#myNavbar a").on('click', function(event){
         // build scene
         
 				var scene = new ScrollMagic.Scene({
-          offset: 2,
-          triggerHook: 0.5
+          offset: 1,
+          triggerHook: 0.2,
+          duration:'50%'
         })
 
-        .setPin("#section1")
+        .setPin(".section1")
         .setTween(tween) 
         .addIndicators() 
         .addTo(controller);
