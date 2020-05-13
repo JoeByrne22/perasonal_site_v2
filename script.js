@@ -26,7 +26,8 @@ $("#myNavbar a").on('click', function(event){
         var tween = new TimelineMax()
         .to(".first_name", 1, {left: "-=200"})
         .to(".last_name", 1, {right: "-=200"})
-        .to(".profession", 1, {left: "-=200"});
+        .to(".profession", 1, {left: "-=200"})
+        .to(".navbar", 1, {opacity: "1", visibility: "visible"});
 
 
         var controller = new ScrollMagic.Controller();

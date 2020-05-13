@@ -45,6 +45,7 @@
     visibility:"hidden";
     position: fixed !important;
     width: 100% !important;
+    z-index: 1;
   }
   
 
