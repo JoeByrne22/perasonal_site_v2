@@ -1,4 +1,5 @@
 // Add scrollspy to <body>
+
 $('body').scrollspy({target: ".navbar", offset: 50});
 
 // Add smooth scrolling to all links inside a navbar
@@ -23,13 +24,15 @@ $("#myNavbar a").on('click', function(event){
 
 
 
-        var tween = new TimelineMax()
+
+        var tween1 = new TimelineMax()
         .to(".mouse", 1, {opacity: "0"})
         .to(".first_name", 1, {left: "-=300", opacity: "0.8", visibility: "visible" })
         .to(".last_name", 1, {right: "-=300", opacity: "0.8", visibility: "visible" })
         .to(".profession", 1, {left: "-=300", opacity: "0.8", visibility: "visible" })
         .to(".navbar", 1, {opacity: "1", visibility: "visible"}, "+=9.0")
         .to(".bcg", 8, {opacity: "0.1"}, "-=9.0")
+        
 
 
         var controller = new ScrollMagic.Controller();
@@ -42,7 +45,14 @@ $("#myNavbar a").on('click', function(event){
         })
 
         .setPin(".bcg")
-        .setTween(tween) 
-        .addIndicators() 
+        .setTween(tween1) 
+        // .addIndicators() 
         .addTo(controller);
 
+
+
+
+
+
+
+        
