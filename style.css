@@ -101,8 +101,8 @@
   font-size: 150px;
   position: relative;
   left: 300px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
   opacity: 0;
   visibility: hidden;
 }
@@ -111,8 +111,8 @@
   font-size: 150px;
   position: relative;
   right: 300px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; */
   opacity: 0;
   visibility: hidden;
 }
@@ -139,7 +139,7 @@
   width: 26px;
   height: 46px;
   border-radius: 13px;
-  border: 2px solid #e8f380;
+  border: 2px solid #febc64;
   position: absolute;
   bottom: 40px;
   position: absolute;
@@ -200,7 +200,7 @@
   /* SECTION2 */
 
   #section2 {
-    margin: 0 10rem;
+    margin: -20rem 10rem 0;
     background:none;
     background-size: 100% auto;
   }

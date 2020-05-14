@@ -24,6 +24,7 @@ $("#myNavbar a").on('click', function(event){
 
 
         var tween = new TimelineMax()
+        .to(".mouse", 1, {opacity: "0"})
         .to(".first_name", 1, {left: "-=300", opacity: "0.8", visibility: "visible" })
         .to(".last_name", 1, {right: "-=300", opacity: "0.8", visibility: "visible" })
         .to(".profession", 1, {left: "-=300", opacity: "0.8", visibility: "visible" })
