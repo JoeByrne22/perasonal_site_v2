@@ -29,8 +29,47 @@
     color: #febc64;
   }
 
+  @media only screen and (min-width: 768px) {
+    p{
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
 
 
+  @media only screen and (min-width: 768px) {
+    #section2 .img-profile{
+      padding: 11rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section2 {
+      margin: -80rem 10rem 0;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section2 .row{
+      flex-wrap: wrap;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) {
+    #section4 .row{
+      margin: 0rem 11rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #section4 .thumbnail{
+      height: 35%
+  }
+}
 
 
  /* NAVBAR  */
@@ -79,6 +118,7 @@
 }
 
 .name_container {
+  overflow-x: hidden;
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -207,11 +247,18 @@
   
   #section2 .row{ 
     display: flex;
+    flex-wrap: nowrap;
   }
+
+
 
   #section2 .panel-intro-container {
       display: flex;
       align-items: center;
+  }
+
+  #section2 .img-profile {
+    padding: 2rem;
   }
 
 /* SECTION3 */
@@ -246,6 +293,17 @@
     height: 50%;
     overflow: hidden;
   }
+  #section4 .thumbnail {
+    background-color:#323070 !important;
+    height: 350px;
+  }
+
+  #section4 .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
   #section5 {
     background:none;
     background-size: 100% auto;
@@ -277,10 +335,6 @@
 
       }
   
-  .thumbnail {
-    background-color:#323070 !important;
-    height: 350px;
-  }
   
   .thumbnail a :hover {
     opacity: 0.3;
