@@ -51,7 +51,19 @@ $("#myNavbar a").on('click', function(event){
 
 
 
+$('.mobile').on("click", function(){
 
+  $('.mobile .navbar-nav').toggleClass('show');
+
+  // if ($('.mobile .navbar-nav').hasClass('show')) {
+  //   $('.mobile .navbar-nav').removeClass('show');
+  //   $('.mobile .navbar-nav').addClass('hide');
+  // }
+  // else if ($('.mobile .navbar-nav').hasClass('hide')) {
+  //   $('.mobile .navbar-nav').removeClass('hide');
+  //   $('.mobile .navbar-nav').addClass('show');
+  // }
+})
 
 
 
