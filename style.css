@@ -133,9 +133,10 @@
     left: 100%;
     padding: 0;
     margin: 0;
-    transition: 1s ease-out;
+    transition: .5s ease-out;
     background-color: #323070;
     list-style-type: none;
+    margin: 1px;
   }
 
   .mobile .navbar-nav .navbar-nav-item{
@@ -145,11 +146,109 @@
     font-size: 18px;
   }
 
-
   .mobile .navbar-nav.show{
     left: 0;
   }
   
+  .mobile-burger {
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 42px;
+    cursor: pointer;
+  }
+
+  .mobile-burger span{
+    width: 18px;
+    height: 2px;
+    background: white;
+    display: block;
+    transition: .5s;
+  }
+
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes rotate-top {
+    0% {
+      transform: translate(0%, 0%) rotate(0deg) ;
+    }
+    100% {
+      transform: translate(0%, 7px) rotate(45deg) ;
+    }
+  }
+
+  @keyframes rotate-bottom {
+    0% {
+      transform: translate(0%, 0%) rotate(0deg) ;
+    }
+    100% {
+      transform: translate(0%, -7px) rotate(-45deg) ;
+    }
+  }
+
+
+  @keyframes reverse-disappear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes reverse-rotate-top {
+    0% {
+      transform: translate(0%, 7px) rotate(45deg) ;
+    }
+    100% {
+      transform: translate(0%, 0%) rotate(0deg) ;
+    }
+  }
+
+  @keyframes reverse-rotate-bottom {
+    0% {
+      transform: translate(0%, -7px) rotate(-45deg) ;
+    }
+    100% {
+      transform: translate(0%, 0%) rotate(0deg) ;
+    }
+  }
+
+  .mobile .animate .burger-top {
+    animation: rotate-top  1s  normal forwards;
+  }
+
+  .mobile .animate .burger-middle {
+    animation: disappear 1s  normal forwards;
+  }
+
+  .mobile .animate .burger-bottom {
+    animation: rotate-bottom  1s  normal forwards;
+  }
+
+  .mobile .burger-top {
+    animation: reverse-rotate-top  1s  normal forwards;
+  }
+
+  .mobile .burger-middle {
+    animation: reverse-disappear 1s  normal forwards;
+  }
+
+  .mobile .burger-bottom {
+    animation: reverse-rotate-bottom  1s  normal forwards;
+  }
+
+
+
+
   @media only screen and (min-width: 768px) {
     .navbar .navbar-container .mobile {
       display: none;

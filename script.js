@@ -54,6 +54,7 @@ $("#myNavbar a").on('click', function(event){
 $('.mobile').on("click", function(){
 
   $('.mobile .navbar-nav').toggleClass('show');
+  $('.mobile-burger').toggleClass('animate');
 
   // if ($('.mobile .navbar-nav').hasClass('show')) {
   //   $('.mobile .navbar-nav').removeClass('show');
