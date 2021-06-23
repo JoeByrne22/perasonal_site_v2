@@ -52,20 +52,14 @@ $("#myNavbar a").on('click', function(event){
 
 
 $('.mobile').on("click", function(){
-
   $('.mobile .navbar-nav').toggleClass('show');
   $('.mobile-burger').toggleClass('animate');
-
-  // if ($('.mobile .navbar-nav').hasClass('show')) {
-  //   $('.mobile .navbar-nav').removeClass('show');
-  //   $('.mobile .navbar-nav').addClass('hide');
-  // }
-  // else if ($('.mobile .navbar-nav').hasClass('hide')) {
-  //   $('.mobile .navbar-nav').removeClass('hide');
-  //   $('.mobile .navbar-nav').addClass('show');
-  // }
 })
 
+
+$('#section3 .fab').on("click", function(){
+  console.log($(this).data("target"));
+})
 
 
         
