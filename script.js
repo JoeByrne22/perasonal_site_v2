@@ -56,10 +56,16 @@ $('.mobile').on("click", function(){
   $('.mobile-burger').toggleClass('animate');
 })
 
+$('#icon-close').on("click", function(){
+  $('#icon-overlay').removeClass('show');
+  $('.icon-overlay-p').removeClass('show');
+})
 
 $('#section3 .fab').on("click", function(){
-  $('#icon-overlay').addClass('show')
-  console.log($(this).data("target"));
+  $('#icon-overlay').addClass('show');
+  const data = $(this).data("target");
+  // console.log('data', data);
+  $('#icon-overlay .' + data).addClass('show');
 })
 
 
