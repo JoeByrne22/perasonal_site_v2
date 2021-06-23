@@ -446,7 +446,12 @@
     top: 0;
     position: fixed;
     z-index: 2;
+    display: none;
   }
+  #icon-overlay.show{
+    display: block;
+  }
+
 
   /* SECTION4 */
   #section4 {

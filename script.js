@@ -58,6 +58,7 @@ $('.mobile').on("click", function(){
 
 
 $('#section3 .fab').on("click", function(){
+  $('#icon-overlay').addClass('show')
   console.log($(this).data("target"));
 })
 
