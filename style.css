@@ -30,7 +30,7 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
@@ -421,7 +421,7 @@
 
 /* SECTION3 */
   #section3 {
-    margin: 0 10rem;
+    margin: 0;
     background: none;
     background-size: 100% auto;
     padding-bottom: 5%;
@@ -440,7 +440,7 @@
 
   /* SECTION4 */
   #section4 {
-    margin: 0 10rem;
+    margin: 0;
     background:none;
     background-size: 100% auto;
     padding-top: 5%;
