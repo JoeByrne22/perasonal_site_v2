@@ -36,7 +36,7 @@
 
   @media only screen and (min-width: 768px) {
     p{
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 
@@ -454,6 +454,7 @@
   #section4 .thumbnail {
     background-color:#323070 !important;
     height: 350px;
+    overflow-y: scroll;
   }
 
   #section4 .row {
